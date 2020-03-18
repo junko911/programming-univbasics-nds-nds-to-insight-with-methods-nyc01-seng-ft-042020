@@ -7,7 +7,7 @@ require 'pp'
 def gross_for_director(director_data)
   index = 0
   worldwide_gross_total = 0
-    while index < director_data.length[:movies] do
+    while index < director_data[:movies].length do
       worldwide_gross_total += director_data[:movies][index][:worldwide_gross]
       index += 1
     end
